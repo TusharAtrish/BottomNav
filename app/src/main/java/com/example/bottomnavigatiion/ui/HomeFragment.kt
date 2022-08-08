@@ -16,27 +16,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class HomeFragment : Fragment() {
-    
-    var binding : FragmentHomeBinding ? =null
-    lateinit var navController : NavController
-    lateinit var bottomNav : BottomNavigationView
+
+
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        
-        binding = FragmentHomeBinding.inflate(inflater,container,false)
-        return binding!!.root
 
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-    }
 
 
 
