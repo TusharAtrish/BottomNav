@@ -5,8 +5,12 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.bottomnavigatiion.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.signInFragment)
             binding.bottomNavigationView.visibility = View.GONE
         } else {
-            navController.navigate(R.id.homeFragment)
+            navController.navigate(R.id.homeFragment3)
             binding.bottomNavigationView.visibility = View.VISIBLE
         }
     }
@@ -52,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 navController.navigate(R.id.profileFragment)
             }
             else -> {
-                navController.navigate(R.id.homeFragment)
+                navController.navigate(R.id.homeFragment3)
             }
         }
         return true
