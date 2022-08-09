@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.signInFragment)
             binding.bottomNavigationView.visibility = View.GONE
         } else {
-            navController.navigate(R.id.homeFragment3)
+            navController.navigate(R.id.homeFragment)
             binding.bottomNavigationView.visibility = View.VISIBLE
         }
     }
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 navController.navigate(R.id.profileFragment)
             }
             else -> {
-                navController.navigate(R.id.homeFragment3)
+                navController.navigate(R.id.homeFragment)
             }
         }
         return true
